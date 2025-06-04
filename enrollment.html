@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form - San Beda College Alabang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=100&h=100&fit=crop&crop=center" alt="San Beda Lion Logo" class="logo">
+                <h1>San Beda College Alabang</h1>
+            </div>
+            <nav class="nav">
+                <a href="grades.html" class="nav-link">Back to Grades</a>
+                <a href="index.html" class="nav-link">Logout</a>
+            </nav>
+        </header>
+
+        <main class="enrollment-container">
+            <div class="enrollment-box">
+                <h2>Student Enrollment Form</h2>
+                <p class="enrollment-subtitle">Academic Year 2024-2025 - Second Semester</p>
+                
+                <form class="enrollment-form" action="grades.html" method="get">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="middle-name">Middle Name</label>
+                                <input type="text" id="middle-name" name="middle-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="student-id-enroll">Student ID</label>
+                                <input type="text" id="student-id-enroll" name="student-id-enroll" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Academic Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="program">Program</label>
+                                <select id="program" name="program" required>
+                                    <option value="">Select Program</option>
+                                    <option value="bscs">Bachelor of Science in Computer Science</option>
+                                    <option value="bsit">Bachelor of Science in Information Technology</option>
+                                    <option value="bsba">Bachelor of Science in Business Administration</option>
+                                    <option value="bsee">Bachelor of Science in Electronics Engineering</option>
+                                    <option value="bsed">Bachelor of Secondary Education</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="year-level">Year Level</label>
+                                <select id="year-level" name="year-level" required>
+                                    <option value="">Select Year Level</option>
+                                    <option value="1">1st Year</option>
+                                    <option value="2">2nd Year</option>
+                                    <option value="3">3rd Year</option>
+                                    <option value="4">4th Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Course Selection</h3>
+                        <div class="course-selection">
+                            <div class="course-item">
+                                <input type="checkbox" id="course1" name="courses" value="CS401">
+                                <label for="course1">CS401 - Advanced Programming</label>
+                                <span class="units">3 units</span>
+                            </div>
+                            <div class="course-item">
+                                <input type="checkbox" id="course2" name="courses" value="CS402">
+                                <label for="course2">CS402 - Computer Networks</label>
+                                <span class="units">3 units</span>
+                            </div>
+                            <div class="course-item">
+                                <input type="checkbox" id="course3" name="courses" value="CS403">
+                                <label for="course3">CS403 - Web Development</label>
+                                <span class="units">3 units</span>
+                            </div>
+                            <div class="course-item">
+                                <input type="checkbox" id="course4" name="courses" value="MATH401">
+                                <label for="course4">MATH401 - Statistics</label>
+                                <span class="units">3 units</span>
+                            </div>
+                            <div class="course-item">
+                                <input type="checkbox" id="course5" name="courses" value="PE401">
+                                <label for="course5">PE401 - Physical Education</label>
+                                <span class="units">2 units</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" onclick="window.history.back()">Cancel</button>
+                        <button type="submit" class="btn-primary">Submit Enrollment</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 San Beda College Alabang. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,24 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>beda-grades-red-lion</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Beda College Alabang - Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=100&h=100&fit=crop&crop=center" alt="San Beda Lion Logo" class="logo">
+                <h1>San Beda College Alabang</h1>
+            </div>
+        </header>
 
-    <meta property="og:title" content="beda-grades-red-lion" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+        <main class="login-container">
+            <div class="login-box">
+                <h2>Student Portal Login</h2>
+                <form class="login-form" action="grades.html" method="get">
+                    <div class="form-group">
+                        <label for="student-id">Student ID</label>
+                        <input type="text" id="student-id" name="student-id" placeholder="Enter your Student ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <div class="login-footer">
+                    <p>Need help? Contact the registrar's office</p>
+                </div>
+            </div>
+        </main>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <footer class="footer">
+            <p>&copy; 2024 San Beda College Alabang. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
 </html>
