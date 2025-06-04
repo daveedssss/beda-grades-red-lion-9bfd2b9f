@@ -49,6 +49,32 @@ body {
     font-weight: bold;
 }
 
+/* College banner styles */
+.college-banner {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.banner-logo {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Lion logo styles */
+.student-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lion-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
 .nav {
     display: flex;
     gap: 1rem;
@@ -169,7 +195,6 @@ body {
 
 .student-info h2 {
     color: #dc2626;
-    margin-bottom: 1rem;
     font-size: 1.8rem;
 }
 
@@ -432,6 +457,10 @@ body {
         height: 50px;
     }
 
+    .banner-logo {
+        max-width: 250px;
+    }
+
     .login-box,
     .enrollment-box {
         padding: 2rem;
@@ -474,5 +503,9 @@ body {
     
     .gpa-value {
         font-size: 2rem;
+    }
+
+    .banner-logo {
+        max-width: 200px;
     }
 }
